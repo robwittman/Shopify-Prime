@@ -16,7 +16,7 @@ export class InventoryItems extends BaseService {
      * @param options Options for filtering the result.
      */
     public get(id: number, options?: Options.FieldOptions) {
-        return this.createRequest<Location>("GET", `${id}.json`, "inventory_item", options);
+        return this.createRequest<InventoryItem>("GET", `${id}.json`, "inventory_item", options);
     }
 
     /**
